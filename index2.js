@@ -89,7 +89,7 @@ const controlaCards = () =>{
                         pintarcards(numeroRamdon);
                        
                     }else{
-                        items.innerHTML = `<P>Finalizado resultados}*} Correctos ${contadorBien} Incorrectos ${contadorMal} ... </P>`;
+                        items.innerHTML = `<P>Finalizado resultados Correctos ${contadorBien} Incorrectos ${contadorMal} ... </P>`;
                     }
             }
         }
