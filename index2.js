@@ -3,8 +3,12 @@ const cards = document.getElementById('cards')
 const items = document.getElementById('items')
 const fragment = document.createDocumentFragment()
 var input = document.getElementById("myInput");
+
+
 let AuxJsonData = [];
 let contador = 0;
+let contadorBien = 0;
+let contadorMal = 0;
 let contadorR = 0;
 let bandera = true;
 let numerosRandom =[];
@@ -39,7 +43,10 @@ const pintarcards = (item) => {
 
     items.innerHTML = '';
 
-        templateCard.querySelector('h1').textContent = AuxJsonData[item].id       
+        templateCard.getElementById('ContadorBien').textContent = contadorBien  
+       
+        templateCard.getElementById('contadorMal').textContent = contadorMal   
+        templateCard.querySelector('h1').textContent = AuxJsonData[item].id        
         const clone = templateCard.cloneNode(true)       
         fragment.appendChild(clone)
         items.appendChild(fragment)
@@ -82,7 +89,7 @@ const controlaCards = () =>{
                         pintarcards(numeroRamdon);
                        
                     }else{
-                        console.log("Termino......");
+                        items.innerHTML = `<P>Finalizado resultados}*} Correctos ${contadorBien} Incorrectos ${contadorMal} ... </P>`;
                     }
             }
         }
@@ -102,8 +109,11 @@ const agregarInput = (item) =>{
         if (e.key === 'Enter') {
           
           if((document.querySelector('#myInput').value) == AuxJsonData[item].title){
-             
-          };
+             contadorBien++;
+          }else{
+              contadorMal++;
+          }
+
 
          
             controlaCards();
