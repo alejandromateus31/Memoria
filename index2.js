@@ -108,18 +108,13 @@ const agregarInput = (item) =>{
     document.querySelector('#myInput').addEventListener('keypress', function (e) {
         if (e.key === 'Enter') {
           
-          if((document.querySelector('#myInput').value) == AuxJsonData[item].title){
+          if((document.querySelector('#myInput').value.toLowerCase()) == AuxJsonData[item].title){
              contadorBien++;
           }else{
               contadorMal++;
           }
-
-
-         
             controlaCards();
                   
-           
-         
         }     
 
     });
