@@ -2,57 +2,67 @@
     {
    
     "id": 1,
-    "title": "noe"
+    "title": "noe",
+     "palabra" : "lapiz"
    
     },
     {
    
         "id": 2,
-        "title": "duo"       
+        "title": "duo" ,   
+        "palabra" : "silla"  
     },
     {
    
         "id": 3,
-        "title": "tia"
+        "title": "tia",
+        "palabra" : "mesa"  
        
     },
     {
    
         "id": 4,
-        "title": "ica"
+        "title": "ica",
+        "palabra" : "fusil"  
        
         },
         {
        
             "id": 5,
-            "title": "oso"       
+            "title": "oso" ,
+            "palabra" : "cigarrillo"       
         },
         {
        
             "id": 6,
-            "title": "ola"
+            "title": "ola",
+            "palabra" : "buque" 
            
         },
         {
    
         "id": 7,
-        "title": "amo"
+        "title": "amo",
+        "palabra" : "televisor" 
         
         },
         {
         
             "id": 8,
-            "title": "hacha"       
+            "title": "hacha",
+            "palabra" : "pocillo"      
         },
         {
         
             "id": 9,
-            "title": "ave"            
+            "title": "ave" ,
+            "palabra" : "tablero"           
         },
         {
         
             "id": 10,
-            "title": "nora"
+            "title": "nora",
+            "palabra" : "botella" 
             
         }
 ]

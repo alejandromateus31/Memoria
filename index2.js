@@ -105,10 +105,11 @@ function randomIntFromInterval(min, max) { // min and max included
 
 const agregarInput = (item) =>{
     //debugger;
-    document.querySelector('#myInput').addEventListener('keypress', function (e) {
+    document.querySelector('#myInputPalabra').addEventListener('keypress', function (e) {
         if (e.key === 'Enter') {
           
-          if((document.querySelector('#myInput').value.toLowerCase()) == AuxJsonData[item].title){
+          if( ((document.querySelector('#myInput').value.toLowerCase()) == AuxJsonData[item].title) && ((document.querySelector('#myInputPalabra').value.toLowerCase()) == AuxJsonData[item].palabra))
+        {
              contadorBien++;
           }else{
               contadorMal++;
